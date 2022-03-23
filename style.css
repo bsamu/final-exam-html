@@ -1,1 +1,212 @@
 /* 1040 a váltás 3-ra, ~700 2-re*/
+
+/* css reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  text-decoration: none;
+
+  color: inherit;
+}
+
+/* ol, ul, li {
+  list-style:none;
+  display:block;
+  } 
+  
+  table {
+  border-collapse:collapse;
+  border-spacing:0
+  }
+  
+  a img {
+  border: none
+  } */
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+/* textarea {
+  resize: none
+  }
+  
+  
+  button, input, textarea, select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border-radius: 0
+  } */
+
+/* end of css reset */
+
+:root {
+  --primary: #666;
+  --secondary: #fff;
+}
+
+body {
+  background-color: var(--primary);
+}
+
+/* 
+  font-rules:
+  font-family: 'Roboto', sans-serif;
+  */
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  margin-bottom: 40px;
+
+  width: 100%;
+  height: 80px;
+
+  background-color: var(--secondary);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div span.account_balance {
+  color: var(--primary);
+  font-size: 36px;
+  margin: 22px;
+}
+
+header button {
+  height: 60px;
+  width: 60px;
+  background-color: var(--primary);
+  margin: 22px;
+  border-radius: 50%;
+}
+
+header button span.menu {
+  color: var(--secondary);
+  font-size: 36px;
+}
+
+main {
+  background-color: var(--primary);
+  /* max-width: 1200px; */
+  /* margin: 60px auto; */
+}
+
+main #container {
+  margin: 0 auto;
+  max-width: 1200px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main #container .card {
+  position: relative;
+  width: 300px;
+  height: 360px;
+  margin: 30px 30px;
+  padding: 40px;
+
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  background-color: var(--secondary);
+  color: var(--secondary);
+  border: 1px solid var(--primary);
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+main #container .card .title {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 13px;
+  /* width: fit-content; */
+
+  /* min-height: 80px; */
+  /* border-bottom: 1px solid var(--primary); */
+  margin-top: 20px;
+  padding-bottom: 13px;
+  color: var(--primary);
+  text-align: center;
+}
+
+main #container .cardForSub {
+  height: 160px;
+  width: 160px;
+  background-color: var(--primary);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main #container .card .sub {
+  font-size: 80px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+
+main #container .card .text {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 13px;
+  color: var(--primary);
+  text-align: center;
+}
+
+main #container .card button {
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  padding: 0 0 0 20px;
+
+  width: 160px;
+  height: 50px;
+
+  font-size: 14px;
+  background-color: var(--secondary);
+  color: var(--primary);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  border: 1px solid var(--primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  transform: translateX(70px);
+}
+
+main #container .card button span.arrow {
+  font-size: 36px;
+}
+
+main #container .card button:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}

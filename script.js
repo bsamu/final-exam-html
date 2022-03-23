@@ -45,9 +45,11 @@ const creator = (item) => {
     return `
         <div class="card">
             <div class="subCard">
-                <div class="sub">${item.sub}</div>
-                <h2 class="title">${item.text}</h2>
-                <div class="text">${item.title}</div>
+                <div class="cardForSub">
+                    <div class="sub">${item.sub}</div>
+                </div>
+                <div class="title">${item.title}</div>
+                <div class="text">${item.text}</div>
             </div>
             <button button ><span class="buttonText">Save</span><span class="arrow material-icons">arrow_forward</span></button>
         </div>`
